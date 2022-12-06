@@ -1,0 +1,51 @@
+﻿@model WebApplication3.Models.Teste
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Teste</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TesteString)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TesteString)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TesteDouble)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TesteDouble)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TesteDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TesteDateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
