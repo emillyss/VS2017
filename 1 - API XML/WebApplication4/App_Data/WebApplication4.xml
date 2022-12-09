@@ -498,7 +498,7 @@
             <param name="id">ID inteiro</param>
             <returns>String com informação</returns>
         </member>
-        <member name="M:WebApplication4.Controllers.ValuesController.Post(System.String)">
+        <member name="M:WebApplication4.Controllers.ValuesController.Post(WebApplication4.Controllers.teste)">
             <summary>
             Método Post - Registra um item novo.
             </summary>

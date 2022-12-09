@@ -7,6 +7,10 @@ using System.Web.Http;
 
 namespace WebApplication4.Controllers
 {
+    public class teste
+    {
+        public string nome { get; set; }
+    }
     /// <summary>
     /// Está é uma API de teste.
     /// </summary>
@@ -34,8 +38,9 @@ namespace WebApplication4.Controllers
         /// Método Post - Registra um item novo.
         /// </summary>
         /// <param name="value">String para registro a partir do Body</param>
-        public void Post([FromBody]string value)
+        public void Post([FromBody]teste value)
         {
+            var x = value;
         }
 
         /// <summary>
